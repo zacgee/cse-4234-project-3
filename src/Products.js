@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 import App from "./App";
+import Product from "./Product";
 
 function ProductList() {
     const [productData, setProductData] = useState(null);
     const [selectedItem, setSelectedItem] = useState(null);
     const [highlightedIndex, setHighlightedIndex] = useState(null);
+    const [isDetailViewOpen, setIsDetailViewOpen] = useState(false);
 
     useEffect(() => {
         fetch('products.json')
@@ -96,6 +98,11 @@ function ProductList() {
     const handleLearnMoreClick = (item, itemIndex) => {
         setSelectedItem(item);
         setHighlightedIndex(itemIndex);
+        setIsDetailViewOpen(true);
+    };
+
+    const handleCloseDetailView = () => {
+        setIsDetailViewOpen(false);
     };
 
     return (
@@ -150,6 +157,9 @@ function ProductList() {
                     <p>Loading...</p>
                 )}
             </div>
+            {isDetailViewOpen && selectedItem && (
+                 <Product selectedItem={selectedItem} handleCloseDetailView={handleCloseDetailView} />
+            )}
         </div>
     );
 }
