@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import Team from './Team';
 import Products from './Products';
-import Customers from './Customers';
+import CustomerAnalytics from './CustomerAnalytics';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,7 +15,7 @@ root.render(
             <Routes>
                 <Route path="/" element={<App/>}></Route>
                 <Route path="/Products" element={<Products/>}></Route>
-                <Route path="/Customers" element={<Customers/>}></Route>
+                <Route path="/CustomerAnalytics" element={<CustomerAnalytics/>}></Route>
                 <Route path="/Team" element={<Team/>}></Route>
             </Routes>
         </BrowserRouter>

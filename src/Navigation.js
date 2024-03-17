@@ -5,7 +5,7 @@ export default function Navigation() {
 
     let links = [
         {href:"/Products", text: "Products"},
-        {href:"/Customers", text: "Customer Analytics"},
+        {href:"/CustomerAnalytics", text: "Customer Analytics"},
         {href:"/Team", text: "The Team"}
     ]
     return (
