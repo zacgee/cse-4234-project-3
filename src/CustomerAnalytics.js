@@ -126,7 +126,7 @@ function CustomerAnalytics() {
                                     </p>
                                     <p style={{width: `${100 / 10}%`}}>
                                         <img src={customer.picture.thumbnail} alt="Customer Thumbnail"
-                                             style={{width: '50px', height: '50px', justifyContent: 'center', alignItems: 'center'}}/>
+                                             style={{width: '50px', height: '50px', justifyContent: 'center', alignItems: 'center', borderRadius: '50%'}}/>
                                     </p>
                                 </div>
                             );
