@@ -12,23 +12,24 @@ const TeamMember = ({ name, src, email, bio }) => {
         onMouseLeave={() => setShowInfo(false)}
       >
         <div className="image-container">
-          {showInfo ? null : <img src={src} alt={name} />}
+            { <img src={src} alt={name} />}
         </div>
         <div className="name-container">
-          {showInfo ? <div className="name">{name}</div> : null}
+          {<div className="name">{name}</div>}
         </div>
-        {showInfo && (
-          <div className="member-info">
-            <div className="email">{email}</div>
-            <div className="bio">{bio}</div>
-          </div>
-        )}
+          {showInfo && (
+              <div className="member-info">
+                  <div className="email">{email}</div>
+                  <div className="bio">{bio}</div>
+              </div>
+          )}
+
       </div>
     );
   };
   
 function Team() {
-    console.log(images)
+    //console.log(images)
   return (
     <div className="team">
       <h3>The Team</h3>

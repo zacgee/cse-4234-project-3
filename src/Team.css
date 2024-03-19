@@ -1,6 +1,10 @@
 .team-member {
     position: relative;
   }
+
+.team h3{
+  text-align: center;
+}
   
   .image-container {
     width: 100px; /* Adjust as needed */
@@ -17,9 +21,11 @@
   }
   
   .name-container {
+    font-weight: bold;
     text-align: center;
     margin-top: 10px;
   }
+
   
   .member-info {
     position: absolute;
@@ -36,6 +42,7 @@
   .member-info .email,
   .member-info .bio {
     margin-top: 5px;
+    text-align: center;
   }
 
   .team-members {
@@ -46,6 +53,7 @@
     margin-top: 20px; /* Add some top margin */
   }
   
+
   @media (max-width: 768px) {
     .team-members {
       grid-template-columns: repeat(1, 1fr); /* 1 column for smaller screens */
