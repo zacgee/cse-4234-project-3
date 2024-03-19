@@ -1,30 +1,53 @@
-.team {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #efefef;
-    padding: 20px;
-    border-radius: 10px;
-    width: 90%; /* Changed width to percentage for responsiveness */
-    max-width: 800px; /* Added max-width for larger screens */
-    max-height: 600px;
-    overflow-y: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-}
-
-.img {
-    max-width: 100%; /* Adjusted image width to fit container */
-    height: auto;
-    display: flex;
-    border-radius: 50px;
-    padding: 5px;
-}
-
-.name, .bio, .email {
+.team-member {
     position: relative;
-    bottom: auto;
-    color: black;
-}
+  }
+  
+  .image-container {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    overflow: hidden;
+    border-radius: 50%; /* Make it circular */
+    margin: 0 auto;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .name-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .member-info {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure it appears above other elements */
+  }
+  
+  .member-info .email,
+  .member-info .bio {
+    margin-top: 5px;
+  }
 
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for the top row */
+    gap: 20px;
+    justify-content: center; /* Center-align horizontally */
+    margin-top: 20px; /* Add some top margin */
+  }
+  
+  @media (max-width: 768px) {
+    .team-members {
+      grid-template-columns: repeat(1, 1fr); /* 1 column for smaller screens */
+    }
+  }
