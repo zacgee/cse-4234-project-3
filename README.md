@@ -1,6 +1,47 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Inventory Management System
+
+This is an Inventory Management System developed as part of a group project using React. The system provides users with an interface to view analytics related to both customers and items in inventory. It showcases the ability to gather and present data insights efficiently. This project serves as an example of using React for building dynamic web applications and highlights team collaboration in software development.
+
+## Features
+
+- **Customer Analytics**
+- **Item Analytics**
+- **Responsive Design**
+- **Built with React** 
+
+## Technologies Used
+
+- **React**: Front-end library for building user interfaces.
+- **JavaScript (ES6)**: For building logic and interactive functionality.
+- **CSS/HTML**: Styling and structure of the application.
+- **Node.js & npm**: Used for managing dependencies and running development scripts.
+
+## Getting Started
+
+To get started with running this project locally, follow these steps:
+
+1. Clone the repository to your local machine.
+    \`\`\`bash
+    git clone https://github.com/zacgee/cse-4234-project-3
+    \`\`\`
+
+2. Navigate to the project directory.
+    \`\`\`bash
+    cd cse-4234-project-3
+    \`\`\`
+
+3. Install the necessary dependencies using npm.
+    \`\`\`bash
+    npm install
+    \`\`\`
+
+4. Start the development server.
+    \`\`\`bash
+    npm start
+    \`\`\`
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
 ## Available Scripts
 
@@ -8,63 +49,20 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the app in development mode.Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload if you make edits.You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production, optimizing the build for performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. Your feedback and contributions are always welcome.
